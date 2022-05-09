@@ -9,9 +9,9 @@ export const Home = () => {
     return<div className="Home">
         <h1>למצא בקליק</h1>
         <h1>welcome to the site of hashavat aveda</h1>
-        <Link to={'/about'}>  אודות</Link>
-        <Link to={'/login'}>  כניסה למשתמש רשום</Link>
-        <Link to={'/signin'}>  רישום למשתמש חדש</Link>
+        <Link to={'/about'}>  אודות</Link><br/>
+        <Link to={'/login'}>  כניסה למשתמש רשום</Link><br/>
+        <Link to={'/signin'}>  רישום למשתמש חדש</Link><br/>
         <Outlet />
        
         </div>

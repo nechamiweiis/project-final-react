@@ -16,20 +16,13 @@ function App() {
       <Routes>
         <Route path='' element={<Home />}>
           <Route path='/about' element={<About />} />
-          <Route path='/signin' element={<Signin />}> 
-             <Route path='/signin' element={<Signin />} />
-           
-            <Route path='/signin/homeinner' element={<Homeinner />}>
-              <Route path='/signin/homeinner/founds' element={<Founds />} />
-              <Route path='/signin/homeinner/losses' element={<Losses />} />
-            </Route>
-            </Route>
-          <Route path='/login' element={<Login />}>
-            <Route path='/login/homeinner' element={<Homeinner />}>
-              <Route path='/login/homeinner/founds' element={<Founds />} />
-              <Route path='/login/homeinner/losses' element={<Losses />} />
-            </Route> </Route>
+          <Route path='/signin' element={<Signin />} />
+          <Route path='/login' element={<Login />} />
+        </Route>
 
+        <Route path='/homeinner' element={<Homeinner />}>
+          <Route path='/homeinner/founds' element={<Founds />} />
+          <Route path='/homeinner/losses' element={<Losses />} />
         </Route>
 
       </Routes>
